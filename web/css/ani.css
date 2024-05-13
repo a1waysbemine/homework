@@ -1,0 +1,32 @@
+#visual .main-banner li.on .txt h2  {
+    opacity: 0;
+    animation: aniTxt 0.4s linear forwards;
+}
+#visual .main-banner li.on .txt h2 + p { 
+    opacity: 0;
+    animation: aniH2 0.6s linear 1 forwards;
+}
+#visual .main-banner li.on .txt .more { 
+    opacity: 0;
+    animation: aniMore 1s linear 1 forwards;
+}
+#visual .scroll {
+    animation: aniScroll 1s linear infinite alternate;
+}
+
+@keyframes aniTxt {
+    0% {transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
+@keyframes aniH2 {
+    0%,20% {transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
+@keyframes aniMore {
+    0%,40% {transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
+@keyframes aniScroll {
+    0% { bottom: 30px }
+    100% {bottom: 10px; }
+}

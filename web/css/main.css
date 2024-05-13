@@ -1,0 +1,559 @@
+#visual {
+    height: 900px;
+    position: relative;
+}
+#visual .main-banner {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+#visual .main-banner li {
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+}
+#visual .main-banner li:nth-child(1) {
+    background-image: url(../images/main/main01_pc.jpg);
+    left: 0;
+}
+#visual .main-banner li:nth-child(2) {
+    background-image: url(../images/main/main02_pc.jpg);
+}
+#visual .main-banner li:nth-child(3) {
+    background-image: url(../images/main/main03_pc.jpg);
+}
+#visual .main-banner li:nth-child(4) {
+    background-image: url(../images/main/main04_pc.jpg);
+}
+
+#visual .main-banner li .txt {
+    color: #fff;
+    margin-left: 120px;
+}
+#visual .main-banner li .txt h2 {
+    font-size: 50px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+#visual .main-banner li .txt h2 + p {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+#visual .main-banner li .txt .more {
+}
+#visual .main-banner li .txt .more a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+/* a 요소는 상속 안 됨 */
+
+#visual .btn-wrap {
+}
+#visual .btn-wrap .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+#visual .btn-wrap .prev {
+    left: 360px;
+}
+#visual .btn-wrap .next {
+    right: 360px;
+}
+#visual .scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*  //visual   */
+
+.main {
+}
+.main .con-box {
+    width: 100%;
+}
+.main .con-box .inner {
+    padding: 120px 0;
+}
+.main .con-box h2 {
+    font-size: 45px;
+    font-weight: 500;
+}
+.main .box1 h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.main .box1 h2 + p {
+    font-size: 17px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.main .box2 h2 {
+    margin-bottom: 25px;
+}
+.main .box2 h2 + p {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.main .con-box .more {
+}
+.main .con-box .more a {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.main .con-box .more a span {
+    transition: 0.4s;
+    z-index: 5;
+    position: relative;
+}
+/* lightgray 배경색보다 span 안의 글자가 위에 오게 poa, z-index값 적용 */
+.main .con-box .more a i {
+    vertical-align: middle;
+    margin-left: 5px;
+    line-height: 50px;
+}
+.main .con-box .more a::after {
+    content: '';
+    display: block;
+    width: 250px;
+    height: 70px;
+    background: lightgray;
+    transition: 0.4s;
+    transform: skewX(-30deg);
+    position: absolute;
+    left: -260px;
+    top: -10px;
+}
+.main .con-box .more a:hover::after {
+    left: -10px;
+}
+
+.main .box1 .more {
+    text-align: center;
+}
+.main .box1 .more a:hover {
+    border-color: goldenrod;
+}
+.main .box1 .more a:hover span {
+    color: #fff;
+}
+.main .box1 .more a:hover::after {
+    background: goldenrod;
+}
+
+.main .box2 .more a {
+    border-color: #fff;
+}
+.main .box2 .more a span {
+    color: #fff;
+}
+.main .box2 .more a::after {
+    background: #fff;
+}
+.main .box2 .more a:hover {
+    border-color: #fff;
+}
+.main .box2 .more a:hover span {
+    color: #333;
+}
+.main .box2 .more a:hover::after {
+    background: #fff;
+}
+/*  content 공통부분  */
+
+.main .con1 {
+}
+.main .con1 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin-bottom: 50px;
+}
+.main .con1 ul li {
+    width: 270px;
+}
+.main .con1 ul li a {
+}
+.main .con1 ul li a div {
+    width: 270px;
+    height: 365px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.main .con1 ul li a div img {
+    width: 100%;
+    transition: 0.3s;
+}
+.main .con1 ul li:hover a div img {
+    transform: scale(1.05);
+}
+.main .con1 ul li a div span {
+    width: 270px;
+    height: 365px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, #f5f5f5, #e0e0e0);
+    opacity: 0;
+    transition: 0.5s;
+}
+.main .con1 ul li:hover a div span {
+    opacity: 0.3;
+}
+.main .con1 ul li a h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999;
+}
+.main .con1 ul li a h3 span {
+    font-weight: 700;
+    display: block;
+    margin-top: 5px;
+}
+.main .con1 ul li a p {
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 350;
+    word-break: keep-all;
+}
+/*   //con1   */
+
+.main .con2 {
+    position: relative;
+}
+.main .con2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    background: #f6f6f6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -100;
+}
+.main .con2 ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.main .con2 ul li {
+    width: 580px;
+}
+.main .con2 ul li div {
+    width: 580px;
+    height: 550px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.main .con2 ul li div a {
+    width: 580px;
+    height: 550px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main .con2 ul li div a img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    transition: 0.7s;
+}
+.main .con2 ul li:hover div a img {
+    transform: scale(1.03);
+}
+.main .con2 ul li div a h3 {
+    color: #fff;
+    font-size: 28px;
+    line-height: 1.3;
+    position: relative;
+    z-index: 15;
+    margin-bottom: 30px;
+}
+.main .con2 ul li div a h3 span {
+    font-size: 43px;
+    font-weight: 400;
+    display: block;
+}
+.main .con2 ul li div a b {
+    position: relative;
+    z-index: 15;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    display: block;
+    color: #fff;
+}
+.main .con2 ul li div a b i {
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.main .con2 ul li p {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.main .con2 ul li p.more {
+}
+/*  //CON2   */
+
+.main .con3 {
+    position: relative;
+}
+.main .con3 .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .con3::after {
+    content: '';
+    display: block;
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #07255d;
+    z-index: -10;
+}
+.main .con3 .left {
+    width: 480px;
+    color: #fff;
+}
+.main .con3 .left strong {
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 35px;
+    margin-top: 390px;
+}
+.main .con3 .left h2 {
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 60px;
+}
+.main .con3 .left h2 + p {
+    word-break: keep-all;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 26px;
+}
+.main .con3 .left h2 p.more {
+}
+
+.main .con3 ul {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main .con3 ul li {
+    margin-bottom: 25px;
+}
+.main .con3 ul li a {
+}
+.main .con3 ul li a div {
+    width: 275px;
+    height: 175px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.main ul li a div img {
+    width: 100%;
+    height: 100%;
+}
+.main ul li a strong {
+    font-size: 17px;
+    font-weight: 400;
+}
+/*   //CON3   */
+
+.main .con4 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+}
+.main .con4 .inner {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/main/main_foot_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .con4 .left {
+    width: 400px;
+    color: #fff;
+    margin-left: 370px;
+}
+.main .con4 .left h2 {
+    font-size: 43px;
+    font-weight: 400;
+}
+.main .con4 .left h2 span {
+    display: block;
+    font-weight: 500;
+}
+.main .con4 .left h2 + p {
+}
+.main .con4 .left p.more {
+}
+
+.main .con4 ul {
+    display: flex;
+    width: 700px;
+    margin-right: 350px;
+}
+.main .con4 ul li {
+    margin-right: 20px;
+    color: #fff;
+    box-sizing: border-box;
+}
+.main .con4 ul li a {
+    color: #fff;
+    display: block;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.main .con4 ul li:nth-child(1) a {
+    background: rgba(240, 110, 4, 0.7);
+}
+.main .con4 ul li:nth-child(2) a {
+    background: rgba(1, 1, 65, 0.7);
+}
+.main .con4 ul li:nth-child(3) a {
+    background: rgb(1, 1, 175, 0.7);
+}
+
+.main .con4 ul li a span {
+    display: block;
+}
+.main .con4 ul li a span img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+}
+.main .con4 ul li a strong {
+    display: block;
+    text-wrap: nowrap;
+    font-size: 15px;
+}
+.main .con4 ul li a strong span {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#gnb {
+    position: fixed;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+}
+#gnb::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 180px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#gnb li {
+    margin-bottom: 20px;
+}
+#gnb li:last-child {
+    margin-bottom: 0;
+}
+#gnb li a {
+    display: block;
+    padding-left: 20px;
+    white-space: nowrap;
+    position: relative;
+}
+#gnb li a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: lightgray;
+    width: 7px;
+    height: 7px;
+    left: 0;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+}
+#gnb li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 0;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    opacity: 0;
+}
+#gnb li:hover a::before {
+    background: blue;
+}
+#gnb li:hover a::after {
+    opacity: 1;
+    border-color: blue;
+}
+
+#gnb li.on a::before,
+#gnb li.on a::after {
+    display: block;
+}

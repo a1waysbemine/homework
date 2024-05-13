@@ -1,0 +1,92 @@
+#wrap {
+    width: 100%;
+    min-width: 1600px;
+}
+.inner {
+    width: 1180px;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#header,
+#visual,
+#container,
+#content,
+#footer {
+    width: 100%;
+}
+#header {
+    width: 1740px;
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+#header .inner {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header h1 {
+}
+#header .util {
+    display: flex;
+    align-items: center;
+}
+#header .util .lang {
+    display: flex;
+}
+#header .util .lang li {
+    margin-right: 20px;
+}
+#header .util .lang li a {
+    color: #000;
+    font-size: 13px;
+    font-weight: 300;
+}
+#header .util .lang li.on a {
+    color: red;
+}
+#header .util .all-menu {
+}
+#header .util .all-menu i {
+    font-size: 30px;
+}
+
+#header .nav {
+}
+#header .nav .gnb {
+    display: flex;
+}
+#header .nav .gnb li {
+}
+#header .nav .gnb li a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    display: block;
+    padding: 10px 60px;
+}
+
+#footer {
+    background: #131313;
+}
+#footer .inner {
+    padding: 50px 0;
+}
+#footer p {
+    font-size: 13px;
+    color: #fff;
+}
+#footer p:nth-child(4) {
+    margin-top: 10px;
+}
+#footer .top {
+    position: absolute;
+    right: -50px;
+    top: -70px;
+}
